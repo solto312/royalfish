@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Fish — Свежая форель и живописная природа | Река Аламедин, Кыргызстан</title>
+  <meta name="description" content="Royal Fish — живописное кафе на реке Аламедин, Арашан. Свежая форель прямо из воды, блюда на гриле, семейные топчаны на открытом воздухе и чистый горный воздух." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 900:'#14403c', 800:'#1a544f', 700:'#1f706b', 600:'#2a827b', 500:'#3a978f', 400:'#63aca5', 300:'#8fc1bb', 100:'#dfece9' },
+            cream: { DEFAULT:'#e5e4d6', 50:'#f6f5ee', 100:'#efeee3' },
+          },
+          fontFamily: {
+            display: ['"Playfair Display SC"', 'serif'],
+            body: ['Karla', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            soft: '0 10px 40px -12px rgba(20,64,60,0.28)',
+            card: '0 6px 24px -8px rgba(20,64,60,0.20)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body { font-family: 'Karla', system-ui, sans-serif; background: #f6f5ee; color: #14403c; }
+    .font-display { font-family: 'Playfair Display SC', serif; }
+
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+    .reveal.in { opacity: 1; transform: none; }
+
+    .glass { background: rgba(255,255,255,0.10); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,0.22); }
+    .glass-light { background: rgba(246,245,238,0.80); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.6); }
+
+    .img-fallback { background: linear-gradient(135deg, #14403c 0%, #1f706b 55%, #8fc1bb 100%); }
+
+    .tabbar::-webkit-scrollbar { height: 0; }
+    .tabbar { scrollbar-width: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+      html { scroll-behavior: auto; }
+    }
+    #dgmap { width: 100%; height: 420px; border: 0; display: block; }
+
+    /* Normalize native date/time inputs (esp. iOS Safari): left-align, full width, consistent height */
+    input[type="date"], input[type="time"] {
+      -webkit-appearance: none; appearance: none;
+      text-align: left; min-height: 3rem; width: 100%;
+    }
+    input[type="date"]::-webkit-date-and-time-value { text-align: left; }
+    input[type="number"] { -webkit-appearance: none; appearance: none; }
+  </style>
+</head>
+
+<body class="antialiased">
+
+  <!-- Reusable Instagram glyph (from brand SVG) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="ig-icon" viewBox="0 0 134 134">
+      <path d="M66.5369 0C48.4665 0 46.2006 0.0766603 39.1037 0.400337C32.0216 0.723419 27.1849 1.84836 22.9525 3.4929C18.5771 5.19329 14.8665 7.46853 11.1676 11.1674C7.46853 14.8663 5.19329 18.5773 3.49309 22.9527C1.84817 27.1849 0.723617 32.0216 0.400139 39.1037C0.0764622 46.2006 0 48.4665 0 66.5369C0 84.607 0.0764622 86.8729 0.400139 93.9698C0.723617 101.052 1.84817 105.889 3.49309 110.121C5.19349 114.496 7.46873 118.207 11.1676 121.906C14.8667 125.605 18.5771 127.88 22.9525 129.581C27.1849 131.225 32.0216 132.35 39.1037 132.673C46.2006 132.997 48.4665 133.074 66.5369 133.074C84.607 133.074 86.8729 132.997 93.9698 132.673C101.052 132.35 105.889 131.225 110.121 129.581C114.496 127.88 118.207 125.605 121.906 121.906C125.605 118.207 127.88 114.496 129.581 110.121C131.225 105.889 132.35 101.052 132.673 93.9698C132.997 86.8729 133.074 84.607 133.074 66.5369C133.074 48.4665 132.997 46.2006 132.673 39.1037C132.35 32.0216 131.225 27.1849 129.581 22.9527C127.88 18.5773 125.605 14.8663 121.906 11.1674C118.207 7.46853 114.496 5.19329 110.121 3.4929C105.889 1.84836 101.052 0.723419 93.9698 0.400337C86.8729 0.0766603 84.607 0 66.5369 0ZM66.5369 11.9885C84.3027 11.9885 86.4072 12.0565 93.4233 12.3766C99.9107 12.6723 103.434 13.7563 105.778 14.6675C108.884 15.8746 111.101 17.3163 113.429 19.6446C115.757 21.973 117.199 24.1896 118.406 27.2952C119.317 29.6398 120.401 33.163 120.697 39.6502C121.017 46.6663 121.085 48.7708 121.085 66.5368C121.085 84.3027 121.017 86.4072 120.697 93.4233C120.401 99.9107 119.317 103.434 118.406 105.778C117.199 108.884 115.757 111.101 113.429 113.429C111.101 115.757 108.884 117.199 105.778 118.406C103.434 119.317 99.9105 120.401 93.4233 120.697C86.4084 121.017 84.3041 121.085 66.5368 121.085C48.7694 121.085 46.6655 121.017 39.6502 120.697C33.1628 120.401 29.6398 119.317 27.2954 118.406C24.1894 117.199 21.973 115.757 19.6448 113.429C17.3165 111.101 15.8746 108.884 14.6675 105.778C13.7563 103.434 12.6725 99.9105 12.3766 93.4233C12.0565 86.4072 11.9885 84.3027 11.9885 66.5368C11.9885 48.7708 12.0565 46.6663 12.3766 39.6502C12.6725 33.1628 13.7563 29.6398 14.6675 27.2954C15.8746 24.1894 17.3165 21.973 19.6446 19.6448C21.973 17.3163 24.1896 15.8746 27.2952 14.6675C29.6398 13.7563 33.163 12.6723 39.6502 12.3766C46.6663 12.0565 48.7708 11.9885 66.5368 11.9885" />
+      <path d="M66.537 88.7157C54.2876 88.7157 44.3578 78.7859 44.3578 66.5369C44.3578 54.2875 54.2876 44.3577 66.537 44.3577C78.786 44.3577 88.7157 54.2875 88.7157 66.5369C88.7157 78.7859 78.786 88.7157 66.537 88.7157ZM66.537 32.3692C47.6664 32.3692 32.3693 47.6664 32.3693 66.5369C32.3693 85.407 47.6664 100.704 66.537 100.704C85.4071 100.704 100.704 85.407 100.704 66.5369C100.704 47.6664 85.4071 32.3692 66.537 32.3692ZM110.039 31.0193C110.039 35.4291 106.464 39.0036 102.054 39.0036C97.6448 39.0036 94.0699 35.4291 94.0699 31.0193C94.0699 26.6096 97.6448 23.0347 102.054 23.0347C106.464 23.0347 110.039 26.6096 110.039 31.0193Z" />
+    </symbol>
+  </svg>
+
+  <!-- ============ NAV ============ -->
+  <header id="nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-cream/95 border-b border-brand-100/30">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-24 flex items-center justify-between">
+      <div class="flex items-center gap-6 lg:gap-10">
+        <a href="#home" class="flex items-center group shrink-0" aria-label="Royal Fish">
+          <img src="assets/logo-wordmark.svg" alt="Royal Fish" class="h-16 sm:h-[72px] w-auto" />
+        </a>
+        <div class="hidden md:flex items-center gap-6 lg:gap-7 text-sm font-medium">
+          <a href="#about" class="hover:text-brand-600 transition-colors" data-i18n="nav_about"></a>
+          <a href="#menu" class="hover:text-brand-600 transition-colors" data-i18n="nav_menu"></a>
+          <a href="#location" class="hover:text-brand-600 transition-colors" data-i18n="nav_location"></a>
+          <a href="#reserve" class="hover:text-brand-600 transition-colors" data-i18n="nav_reserve"></a>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 sm:gap-3">
+        <button id="langToggle" class="inline-flex items-center gap-1.5 rounded-full bg-white/80 text-brand-800 font-semibold text-sm px-3.5 py-2 hover:text-brand-600 transition cursor-pointer" aria-label="Switch language">
+          <i data-lucide="languages" class="w-4 h-4"></i><span id="langLabel">EN</span>
+        </button>
+        <a href="https://www.instagram.com/royalfish_kg/" target="_blank" rel="noopener"
+           class="hidden sm:grid place-items-center w-10 h-10 rounded-full bg-white/80 text-brand-800 hover:text-brand-600 hover:scale-105 transition cursor-pointer" aria-label="Instagram">
+          <svg class="w-5 h-5" fill="currentColor" aria-hidden="true"><use href="#ig-icon"></use></svg>
+        </a>
+        <a href="#reserve" class="hidden md:inline-flex items-center gap-2 rounded-full bg-brand-700 hover:bg-brand-600 text-white font-semibold text-sm px-5 py-2.5 shadow-card transition-colors cursor-pointer">
+          <i data-lucide="calendar-check" class="w-4 h-4"></i> <span data-i18n="nav_book"></span>
+        </a>
+        <button id="navToggle" class="md:hidden grid place-items-center w-11 h-11 rounded-full bg-white/80 text-brand-800 hover:text-brand-600 transition cursor-pointer" aria-label="Menu" aria-expanded="false">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-brand-100/40 bg-cream/95 px-5 pb-5">
+      <nav class="flex flex-col text-brand-900 font-medium">
+        <a href="#about" class="py-3.5 border-b border-brand-100/60 hover:text-brand-600 transition" data-i18n="nav_about"></a>
+        <a href="#menu" class="py-3.5 border-b border-brand-100/60 hover:text-brand-600 transition" data-i18n="nav_menu"></a>
+        <a href="#location" class="py-3.5 border-b border-brand-100/60 hover:text-brand-600 transition" data-i18n="nav_location"></a>
+        <a href="#reserve" class="py-3.5 hover:text-brand-600 transition" data-i18n="nav_reserve"></a>
+        <a href="#reserve" class="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-brand-700 hover:bg-brand-600 text-white font-semibold px-5 py-3 shadow-card transition-colors cursor-pointer">
+          <i data-lucide="calendar-check" class="w-4 h-4"></i> <span data-i18n="nav_book"></span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="relative min-h-[100svh] flex items-start md:items-center overflow-hidden">
+    <img src="assets/photos/10.jpg"
+         alt="Royal Fish — беседки у реки"
+         class="absolute inset-0 w-full h-full object-cover"
+         onerror="this.style.display='none';this.parentElement.classList.add('img-fallback')" />
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-900/75 via-brand-900/60 to-brand-900/85"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 w-full pt-32 pb-20 md:pt-24 md:pb-16">
+      <div class="max-w-2xl reveal">
+        <span class="inline-flex items-center gap-2 rounded-full glass text-white/90 text-xs font-medium px-4 py-1.5 mb-6">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> <span data-i18n="hero_badge"></span>
+        </span>
+        <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.08] text-white drop-shadow" data-i18n="hero_title"></h1>
+        <p class="mt-6 text-lg text-cream/90 max-w-xl leading-relaxed" data-i18n="hero_sub"></p>
+        <div class="mt-9 flex flex-wrap items-center gap-4">
+          <a href="#menu" class="inline-flex items-center gap-2 rounded-full bg-cream hover:bg-white text-brand-900 font-semibold px-7 py-3.5 shadow-soft transition-colors cursor-pointer">
+            <i data-lucide="utensils" class="w-5 h-5"></i> <span data-i18n="hero_view_menu"></span>
+          </a>
+          <a href="#reserve" class="inline-flex items-center gap-2 rounded-full bg-brand-700 hover:bg-brand-600 text-white font-semibold px-7 py-3.5 shadow-soft transition-colors cursor-pointer">
+            <i data-lucide="calendar-check" class="w-5 h-5"></i> <span data-i18n="hero_book"></span>
+          </a>
+          <a href="https://www.instagram.com/royalfish_kg/" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 rounded-full glass text-white font-medium px-6 py-3.5 hover:bg-white/20 transition cursor-pointer">
+            <svg class="w-5 h-5" fill="currentColor" aria-hidden="true"><use href="#ig-icon"></use></svg> @royalfish_kg
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 text-white/70 hover:text-white transition animate-bounce cursor-pointer" aria-label="Scroll down">
+      <i data-lucide="chevron-down" class="w-7 h-7"></i>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="py-24 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl reveal">
+        <span class="text-brand-600 font-semibold tracking-wide text-sm uppercase" data-i18n="about_eyebrow"></span>
+        <h2 class="font-display text-3xl sm:text-4xl text-brand-900 mt-3" data-i18n="about_heading"></h2>
+        <p class="mt-5 text-brand-800/80 text-lg leading-relaxed" data-i18n="about_para"></p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div class="reveal bg-white rounded-2xl p-6 shadow-card border border-brand-100 hover:-translate-y-1 hover:shadow-soft transition">
+          <span class="grid place-items-center w-12 h-12 rounded-xl bg-brand-100 text-brand-700 mb-4"><i data-lucide="fish" class="w-6 h-6"></i></span>
+          <h3 class="font-semibold text-lg text-brand-900" data-i18n="about_c1_t"></h3>
+          <p class="mt-2 text-brand-800/70 text-sm leading-relaxed" data-i18n="about_c1_d"></p>
+        </div>
+        <div class="reveal bg-white rounded-2xl p-6 shadow-card border border-brand-100 hover:-translate-y-1 hover:shadow-soft transition" style="transition-delay:.05s">
+          <span class="grid place-items-center w-12 h-12 rounded-xl bg-brand-100 text-brand-700 mb-4"><i data-lucide="trees" class="w-6 h-6"></i></span>
+          <h3 class="font-semibold text-lg text-brand-900" data-i18n="about_c2_t"></h3>
+          <p class="mt-2 text-brand-800/70 text-sm leading-relaxed" data-i18n="about_c2_d"></p>
+        </div>
+        <div class="reveal bg-white rounded-2xl p-6 shadow-card border border-brand-100 hover:-translate-y-1 hover:shadow-soft transition" style="transition-delay:.1s">
+          <span class="grid place-items-center w-12 h-12 rounded-xl bg-brand-100 text-brand-700 mb-4"><i data-lucide="baby" class="w-6 h-6"></i></span>
+          <h3 class="font-semibold text-lg text-brand-900" data-i18n="about_c3_t"></h3>
+          <p class="mt-2 text-brand-800/70 text-sm leading-relaxed" data-i18n="about_c3_d"></p>
+        </div>
+        <div class="reveal bg-white rounded-2xl p-6 shadow-card border border-brand-100 hover:-translate-y-1 hover:shadow-soft transition" style="transition-delay:.15s">
+          <span class="grid place-items-center w-12 h-12 rounded-xl bg-brand-100 text-brand-700 mb-4"><i data-lucide="wind" class="w-6 h-6"></i></span>
+          <h3 class="font-semibold text-lg text-brand-900" data-i18n="about_c4_t"></h3>
+          <p class="mt-2 text-brand-800/70 text-sm leading-relaxed" data-i18n="about_c4_d"></p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-12">
+        <div class="reveal lg:col-span-2 rounded-2xl overflow-hidden shadow-card aspect-[16/9] img-fallback">
+          <img src="assets/photos/8.jpg" alt="Каменная кабинка у реки" class="w-full h-full object-cover" onerror="this.style.display='none'" />
+        </div>
+        <div class="reveal rounded-2xl overflow-hidden shadow-card aspect-[16/9] lg:aspect-square img-fallback">
+          <img src="assets/photos/3.jpg" alt="Форель на гриле" class="w-full h-full object-cover" onerror="this.style.display='none'" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section id="menu" class="py-24 sm:py-28 bg-brand-900 text-white relative overflow-hidden">
+    <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-500/25 blur-3xl"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-cream/10 blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <span class="text-cream font-semibold tracking-wide text-sm uppercase" data-i18n="menu_eyebrow"></span>
+        <h2 class="font-display text-3xl sm:text-4xl mt-3" data-i18n="menu_heading"></h2>
+        <p class="mt-4 text-cream/80" data-i18n="menu_sub"></p>
+      </div>
+
+      <div class="relative mt-12 reveal">
+        <button id="menuPrev" class="hidden md:grid place-items-center absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-20 w-12 h-12 rounded-full bg-cream text-brand-900 shadow-soft hover:scale-110 transition cursor-pointer" aria-label="Previous"><i data-lucide="chevron-left" class="w-6 h-6"></i></button>
+        <button id="menuNext" class="hidden md:grid place-items-center absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-20 w-12 h-12 rounded-full bg-cream text-brand-900 shadow-soft hover:scale-110 transition cursor-pointer" aria-label="Next"><i data-lucide="chevron-right" class="w-6 h-6"></i></button>
+        <div id="menuScroller" class="tabbar flex gap-4 sm:gap-5 overflow-x-auto snap-x snap-mandatory pb-4 -mx-5 px-5 sm:mx-0 sm:px-0 scroll-smooth"></div>
+      </div>
+      <p class="text-center text-cream/60 text-sm mt-3" data-i18n="menu_swipe"></p>
+    </div>
+  </section>
+
+  <!-- ============ LOCATION ============ -->
+  <section id="location" class="py-24 sm:py-28 bg-cream/60">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <span class="text-brand-600 font-semibold tracking-wide text-sm uppercase" data-i18n="loc_eyebrow"></span>
+        <h2 class="font-display text-3xl sm:text-4xl text-brand-900 mt-3" data-i18n="loc_heading"></h2>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-8 mt-12 items-stretch">
+        <div class="lg:col-span-3 reveal">
+          <div class="rounded-2xl overflow-hidden shadow-soft border border-white bg-white">
+            <iframe id="dgmap" title="Royal Fish — 2ГИС"
+                    src="https://widgets.2gis.com/widget?type=firmsonmap&options=%7B%22pos%22%3A%20%7B%22lat%22%3A%2042.7293138500874%2C%20%22lon%22%3A%2074.65306520462038%2C%20%22zoom%22%3A%2016%7D%2C%20%22opt%22%3A%20%7B%22city%22%3A%20%22bishkek%22%7D%2C%20%22org%22%3A%20%2270000001023455235%22%7D"
+                    width="100%" height="420" frameborder="0" loading="lazy"></iframe>
+          </div>
+          <a href="https://2gis.kg/bishkek/firm/70000001023455235" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 mt-3 text-sm font-semibold text-brand-700 hover:text-brand-600 transition cursor-pointer">
+            <i data-lucide="map-pin" class="w-4 h-4"></i> <span data-i18n="loc_2gis"></span>
+          </a>
+        </div>
+        <div class="lg:col-span-2 reveal">
+          <div class="bg-white rounded-2xl shadow-card border border-brand-100 p-7 h-full flex flex-col gap-6">
+            <div class="flex gap-4">
+              <span class="grid place-items-center w-11 h-11 shrink-0 rounded-xl bg-brand-100 text-brand-700"><i data-lucide="map-pin" class="w-5 h-5"></i></span>
+              <div>
+                <h3 class="font-semibold text-brand-900" data-i18n="loc_addr_l"></h3>
+                <p class="text-brand-800/70 mt-1" data-i18n="loc_addr_v"></p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="grid place-items-center w-11 h-11 shrink-0 rounded-xl bg-brand-100 text-brand-700"><i data-lucide="clock" class="w-5 h-5"></i></span>
+              <div>
+                <h3 class="font-semibold text-brand-900" data-i18n="loc_hours_l"></h3>
+                <p class="text-brand-800/70 mt-1" data-i18n="loc_hours_1"></p>
+                <p class="text-brand-800/70" data-i18n="loc_hours_2"></p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="grid place-items-center w-11 h-11 shrink-0 rounded-xl bg-brand-100 text-brand-700"><i data-lucide="phone" class="w-5 h-5"></i></span>
+              <div>
+                <h3 class="font-semibold text-brand-900" data-i18n="loc_phone_l"></h3>
+                <a href="tel:+996705520222" class="text-brand-800/70 mt-1 hover:text-brand-600 transition cursor-pointer block">+996 705 520 222</a>
+              </div>
+            </div>
+            <a href="https://wa.me/996705520222" target="_blank" rel="noopener"
+               class="mt-auto inline-flex items-center justify-center gap-2 rounded-full bg-brand-900 hover:bg-brand-800 text-white font-semibold px-6 py-3 transition-colors cursor-pointer">
+              <i data-lucide="message-circle" class="w-4 h-4"></i> <span data-i18n="loc_wa"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESERVE ============ -->
+  <section id="reserve" class="py-24 sm:py-28">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8">
+      <div class="text-center max-w-xl mx-auto reveal">
+        <span class="text-brand-600 font-semibold tracking-wide text-sm uppercase" data-i18n="res_eyebrow"></span>
+        <h2 class="font-display text-3xl sm:text-4xl text-brand-900 mt-3" data-i18n="res_heading"></h2>
+        <p class="mt-4 text-brand-800/70" data-i18n="res_para"></p>
+      </div>
+
+      <form id="reserveForm" class="mt-10 bg-white rounded-3xl shadow-soft border border-brand-100 p-7 sm:p-9 grid sm:grid-cols-2 gap-5 reveal">
+        <div class="sm:col-span-2">
+          <label for="rName" class="block text-sm font-semibold text-brand-900 mb-2" data-i18n="res_name_l"></label>
+          <input id="rName" type="text" required data-i18n-ph="res_name_ph"
+                 class="w-full rounded-xl border border-brand-100 bg-cream-50 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-400 transition" />
+        </div>
+        <div>
+          <label for="rDate" class="block text-sm font-semibold text-brand-900 mb-2" data-i18n="res_date_l"></label>
+          <input id="rDate" type="date" required
+                 class="w-full rounded-xl border border-brand-100 bg-cream-50 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-400 transition" />
+        </div>
+        <div>
+          <label for="rTime" class="block text-sm font-semibold text-brand-900 mb-2" data-i18n="res_time_l"></label>
+          <input id="rTime" type="time" required
+                 class="w-full rounded-xl border border-brand-100 bg-cream-50 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-400 transition" />
+        </div>
+        <div class="sm:col-span-2">
+          <label for="rGuests" class="block text-sm font-semibold text-brand-900 mb-2" data-i18n="res_guests_l"></label>
+          <input id="rGuests" type="number" min="1" max="40" value="2" required
+                 class="w-full rounded-xl border border-brand-100 bg-cream-50 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-400 transition" />
+        </div>
+        <p id="formError" class="sm:col-span-2 text-sm text-red-600 hidden" data-i18n="res_error"></p>
+        <button type="submit"
+                class="sm:col-span-2 inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] hover:brightness-95 text-white font-semibold px-7 py-4 shadow-soft transition cursor-pointer">
+          <i data-lucide="message-circle" class="w-5 h-5"></i> <span data-i18n="res_submit"></span>
+        </button>
+        <p class="sm:col-span-2 text-center text-xs text-brand-800/50" data-i18n="res_note"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ INSTAGRAM ============ -->
+  <section class="py-24 sm:py-28 bg-brand-900 text-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 reveal">
+        <div>
+          <span class="text-cream font-semibold tracking-wide text-sm uppercase" data-i18n="ig_eyebrow"></span>
+          <h2 class="font-display text-3xl sm:text-4xl mt-3">@royalfish_kg</h2>
+          <p class="mt-3 text-cream/70 max-w-md" data-i18n="ig_para"></p>
+        </div>
+        <a href="https://www.instagram.com/royalfish_kg/" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 rounded-full bg-cream text-brand-900 font-semibold px-6 py-3 hover:scale-105 transition cursor-pointer w-max">
+          <svg class="w-5 h-5" fill="currentColor" aria-hidden="true"><use href="#ig-icon"></use></svg> <span data-i18n="ig_btn"></span>
+        </a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10" id="igGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-brand-900 border-t border-white/10 text-cream/70">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid sm:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center">
+          <img src="assets/logo-wordmark-cream.svg" alt="Royal Fish" class="h-14 w-auto" />
+        </div>
+        <p class="mt-4 text-sm leading-relaxed" data-i18n="foot_tag"></p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4" data-i18n="foot_visit"></h4>
+        <p class="text-sm" data-i18n="loc_addr_v"></p>
+        <p class="text-sm mt-2" data-i18n="foot_hours"></p>
+        <a href="tel:+996705520222" class="text-sm mt-2 block hover:text-white transition cursor-pointer">+996 705 520 222</a>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4" data-i18n="foot_connect"></h4>
+        <div class="flex gap-3">
+          <a href="https://www.instagram.com/royalfish_kg/" target="_blank" rel="noopener" class="grid place-items-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white transition cursor-pointer" aria-label="Instagram"><svg class="w-5 h-5" fill="currentColor" aria-hidden="true"><use href="#ig-icon"></use></svg></a>
+          <a href="https://wa.me/996705520222" target="_blank" rel="noopener" class="grid place-items-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white transition cursor-pointer" aria-label="WhatsApp"><i data-lucide="message-circle" class="w-5 h-5"></i></a>
+          <a href="tel:+996705520222" class="grid place-items-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white transition cursor-pointer" aria-label="Call"><i data-lucide="phone" class="w-5 h-5"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10 py-6 text-center text-xs text-cream/50">
+      © <span id="year"></span> Royal Fish · <span data-i18n="loc_addr_v"></span>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/996705520222" target="_blank" rel="noopener"
+     class="fixed bottom-5 right-5 z-50 grid place-items-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-soft hover:scale-110 transition cursor-pointer" aria-label="Chat on WhatsApp">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <script>
+    /* ================= TRANSLATIONS ================= */
+    const T = {
+      ru: {
+        nav_about:'О нас', nav_menu:'Меню', nav_location:'Контакты', nav_reserve:'Бронь', nav_book:'Забронировать',
+        hero_badge:'Река Аламедин · Бишкек, Кыргызстан',
+        hero_title:'Свежая форель и живописная природа в Royal Fish',
+        hero_sub:'Рыба прямо из горной реки, приготовленная на ваших глазах и поданная у кристально чистой воды — где каждое блюдо пропитано чистым альпийским воздухом.',
+        hero_view_menu:'Смотреть меню', hero_book:'Забронировать стол',
+        about_eyebrow:'О нас', about_heading:'Столик у реки, каких больше нет',
+        about_para:'Там, где река Аламедин сбегает с Арашанских вершин, Royal Fish подаёт улов дня из холодной горной воды прямо на ваш стол. Приходите за форелью — оставайтесь ради вида.',
+        about_c1_t:'Рыба прямо из воды', about_c1_d:'Живая форель из наших прудов — вы выбираете, мы готовим. Свежесть, которую чувствуешь на вкус.',
+        about_c2_t:'Топчаны у реки', about_c2_d:'Семейные столики прямо у воды, в тени сосен под шум горной реки.',
+        about_c3_t:'Детская площадка', about_c3_d:'Безопасная и весёлая площадка, чтобы дети играли, пока взрослые наслаждаются моментом.',
+        about_c4_t:'Чистый горный воздух', about_c4_d:'Сбегите от города — дышите свежим альпийским воздухом рядом с нетронутой природой.',
+        menu_eyebrow:'Меню', menu_heading:'Прямо из реки на стол', menu_sub:'Пролистайте наше полное меню — все блюда и цены.', menu_swipe:'← Листайте, чтобы посмотреть все страницы →',
+        loc_eyebrow:'Как нас найти', loc_heading:'Мы на карте',
+        loc_addr_l:'Адрес', loc_addr_v:'ул. Чынгыш Баатыр, 1, Бишкек, Кыргызстан',
+        loc_hours_l:'Часы работы', loc_hours_1:'Ежедневно · 11:00 – 23:00', loc_hours_2:'Кухня до 22:00',
+        loc_phone_l:'Бронирование', loc_wa:'Написать в WhatsApp', loc_2gis:'Открыть в 2ГИС',
+        res_eyebrow:'Забронировать стол', res_heading:'Бронь за секунды через WhatsApp',
+        res_para:'Заполните данные — мы откроем WhatsApp с готовым сообщением. Без аккаунтов и ожидания.',
+        res_name_l:'Ваше имя', res_name_ph:'например, Айзада', res_date_l:'Дата', res_time_l:'Время', res_guests_l:'Количество гостей',
+        res_error:'Пожалуйста, заполните все поля.', res_submit:'Забронировать через WhatsApp',
+        res_note:'Откроется WhatsApp на +996 705 520 222 с вашими данными.',
+        ig_eyebrow:'Следите за уловом', ig_para:'Свежие истории, ежедневный улов и моменты у реки — прямо из нашей ленты.', ig_btn:'Открыть в Instagram',
+        foot_tag:'Свежая форель и живописная природа на реке Аламедин. Столик у реки для всей семьи.',
+        foot_visit:'Посетить', foot_connect:'Связаться', foot_hours:'Ежедневно 11:00–23:00 (кухня до 22:00)',
+        wa_greeting:'Здравствуйте, Royal Fish! Хочу забронировать стол.', wa_name:'Имя', wa_date:'Дата', wa_time:'Время', wa_guests:'Гостей', wa_thanks:'Спасибо!',
+      },
+      en: {
+        nav_about:'About', nav_menu:'Menu', nav_location:'Location', nav_reserve:'Reserve', nav_book:'Book a Table',
+        hero_badge:'Alamedin River · Bishkek, Kyrgyzstan',
+        hero_title:'Fresh Trout & Picturesque Nature at Royal Fish',
+        hero_sub:'Fish caught straight from the mountain river, cooked before your eyes and served beside crystal waters — where every meal tastes of clean alpine air.',
+        hero_view_menu:'View Menu', hero_book:'Book a Table',
+        about_eyebrow:'Our Story', about_heading:'A riverside table like no other',
+        about_para:'Nestled where the Alamedin river tumbles down from the Arashan peaks, Royal Fish brings the catch of the day from cold mountain water straight to your plate. Come for the trout, stay for the view.',
+        about_c1_t:'Caught from the water', about_c1_d:'Live trout from our own pools — you pick it, we cook it. Freshness you can taste.',
+        about_c2_t:'Riverside outdoor seating', about_c2_d:'Family tables set right by the current, shaded by pines with the sound of running water.',
+        about_c3_t:"Children's playground", about_c3_d:'A safe, fun play area so little ones roam free while grown-ups savour the moment.',
+        about_c4_t:'Clean mountain air', about_c4_d:'Escape the city — breathe crisp alpine air beside untouched nature.',
+        menu_eyebrow:'The Menu', menu_heading:'Straight from river to table', menu_sub:'Browse our full menu — every dish and price.', menu_swipe:'← Swipe to view all pages →',
+        loc_eyebrow:'Find Us', loc_heading:'Find us on the map',
+        loc_addr_l:'Address', loc_addr_v:'1 Chyngysh Baatyr St, Bishkek, Kyrgyzstan',
+        loc_hours_l:'Opening Hours', loc_hours_1:'Daily · 11:00 AM – 11:00 PM', loc_hours_2:'Kitchen until 10:00 PM',
+        loc_phone_l:'Reservations', loc_wa:'Message us on WhatsApp', loc_2gis:'Open in 2GIS',
+        res_eyebrow:'Book a Table', res_heading:'Reserve in seconds via WhatsApp',
+        res_para:"Fill in the details — we'll open WhatsApp with your request pre-written. No accounts, no waiting.",
+        res_name_l:'Your name', res_name_ph:'e.g. Aizada', res_date_l:'Date', res_time_l:'Time', res_guests_l:'Number of guests',
+        res_error:'Please complete all fields.', res_submit:'Reserve via WhatsApp',
+        res_note:'Opens WhatsApp to +996 705 520 222 with your details filled in.',
+        ig_eyebrow:'Follow the catch', ig_para:'Latest stories, daily catches and riverside moments — straight from our feed.', ig_btn:'View on Instagram',
+        foot_tag:'Fresh trout & picturesque nature on the Alamedin river. A riverside table for the whole family.',
+        foot_visit:'Visit', foot_connect:'Connect', foot_hours:'Daily 11AM–11PM (kitchen until 10PM)',
+        wa_greeting:"Hello Royal Fish! I'd like to book a table.", wa_name:'Name', wa_date:'Date', wa_time:'Time', wa_guests:'Guests', wa_thanks:'Thank you!',
+      },
+    };
+
+    /* ================= STATE ================= */
+    let lang = localStorage.getItem('rf_lang') || 'ru';
+    const t = k => (T[lang][k] ?? k);
+
+    /* ---------- APPLY STATIC TRANSLATIONS ---------- */
+    function applyI18n() {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
+      document.querySelectorAll('[data-i18n-ph]').forEach(el => { el.placeholder = t(el.dataset.i18nPh); });
+      document.getElementById('langLabel').textContent = lang === 'ru' ? 'EN' : 'RU';
+    }
+
+    /* ---------- MENU IMAGE GALLERY (PDF pages 2–26) ---------- */
+    const MENU_FIRST_PAGE = 2, MENU_LAST_PAGE = 26;
+    function renderMenuImages() {
+      let html = '';
+      for (let i = MENU_FIRST_PAGE; i <= MENU_LAST_PAGE; i++) {
+        const n = String(i).padStart(2, '0');
+        const src = `menu-images/page-${n}.jpg`;
+        html += `<a href="${src}" target="_blank" rel="noopener"
+             class="snap-center shrink-0 w-[82%] xs:w-[70%] sm:w-[46%] lg:w-[31%] rounded-2xl overflow-hidden shadow-card img-fallback cursor-zoom-in hover:scale-[1.015] transition-transform">
+          <img src="${src}" alt="Royal Fish menu — page ${i}" loading="lazy" class="w-full h-auto block" />
+        </a>`;
+      }
+      document.getElementById('menuScroller').innerHTML = html;
+    }
+    function initMenuScroll() {
+      const s = document.getElementById('menuScroller');
+      const step = () => Math.max(280, s.clientWidth * 0.85);
+      document.getElementById('menuPrev').addEventListener('click', () => s.scrollBy({ left: -step(), behavior: 'smooth' }));
+      document.getElementById('menuNext').addEventListener('click', () => s.scrollBy({ left:  step(), behavior: 'smooth' }));
+    }
+
+    /* ---------- WHATSAPP RESERVATION ---------- */
+    function initReserve() {
+      const form = document.getElementById('reserveForm');
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        const name = document.getElementById('rName').value.trim();
+        const date = document.getElementById('rDate').value;
+        const time = document.getElementById('rTime').value;
+        const guests = document.getElementById('rGuests').value;
+        const err = document.getElementById('formError');
+        if (!name || !date || !time || !guests) { err.classList.remove('hidden'); return; }
+        err.classList.add('hidden');
+        const msg =
+          `${t('wa_greeting')}%0A` +
+          `%0A👤 ${t('wa_name')}: ${encodeURIComponent(name)}` +
+          `%0A📅 ${t('wa_date')}: ${encodeURIComponent(date)}` +
+          `%0A🕐 ${t('wa_time')}: ${encodeURIComponent(time)}` +
+          `%0A👥 ${t('wa_guests')}: ${encodeURIComponent(guests)}` +
+          `%0A%0A${t('wa_thanks')}`;
+        window.open(`https://wa.me/996705520222?text=${msg}`, '_blank');
+      });
+      document.getElementById('rDate').valueAsDate = new Date();
+    }
+
+    /* ---------- INSTAGRAM ---------- */
+    function renderIG() {
+      const imgs = [
+        'assets/photos/1.jpg',
+        'assets/photos/9.jpg',
+        'assets/photos/2.jpg',
+        'assets/photos/5.jpg',
+        'assets/photos/4.jpg',
+        'assets/photos/6.jpg',
+        'assets/photos/7.jpg',
+        'assets/photos/3.jpg',
+      ];
+      document.getElementById('igGrid').innerHTML = imgs.map(src => `
+        <a href="https://www.instagram.com/royalfish_kg/" target="_blank" rel="noopener"
+           class="group relative aspect-square rounded-2xl overflow-hidden img-fallback cursor-pointer">
+          <img src="${src}" alt="Royal Fish" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" onerror="this.style.display='none'" />
+          <span class="absolute inset-0 grid place-items-center bg-brand-900/0 group-hover:bg-brand-900/50 transition">
+            <svg class="w-7 h-7 text-white opacity-0 group-hover:opacity-100 transition" fill="currentColor" aria-hidden="true"><use href="#ig-icon"></use></svg>
+          </span>
+        </a>`).join('');
+      lucide.createIcons();
+    }
+
+    /* ---------- REVEAL / NAV ---------- */
+    function initReveal() {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    }
+
+    /* ---------- LANGUAGE ---------- */
+    function setLang(l) {
+      lang = l; localStorage.setItem('rf_lang', l);
+      applyI18n(); lucide.createIcons();
+    }
+
+    /* ---------- INIT ---------- */
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('year').textContent = new Date().getFullYear();
+      applyI18n();
+      renderMenuImages(); initMenuScroll();
+      initReserve(); renderIG(); initReveal();
+      document.getElementById('langToggle').addEventListener('click', () => setLang(lang==='ru'?'en':'ru'));
+
+      // Mobile menu toggle
+      const navToggle = document.getElementById('navToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const closeMenu = () => {
+        mobileMenu.classList.add('hidden');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.innerHTML = '<i data-lucide="menu" class="w-6 h-6"></i>';
+        lucide.createIcons();
+      };
+      navToggle.addEventListener('click', () => {
+        const open = mobileMenu.classList.toggle('hidden') === false;
+        navToggle.setAttribute('aria-expanded', String(open));
+        navToggle.innerHTML = `<i data-lucide="${open ? 'x' : 'menu'}" class="w-6 h-6"></i>`;
+        lucide.createIcons();
+      });
+      mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
